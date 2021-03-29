@@ -34,3 +34,12 @@
 # Docker 배포
 > npm run docker-run
 ```
+
+## ESLint
+
+```
+# eslint
+> npm run eslint
+# eslint fix
+> npm run eslint:fix
+```
