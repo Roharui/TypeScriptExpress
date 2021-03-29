@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES5",
+      "ES6"
+    ],
+    "target": "ES5",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "outDir": "out"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode"
+  ]
+}
