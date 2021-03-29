@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "nodemon --watch src --delay 1 src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "dev:debug": "nodemon --inspect src/index.ts",
     "build": "webpack --config webpack.config.js",
     "eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "docker-build": "docker build -t roharui/webpack-node-app .",
@@ -19,6 +20,7 @@
     "eslint": "^7.23.0",
     "source-map": "^0.7.3",
     "ts-loader": "^8.1.0",
+    "ts-node": "^9.1.1",
     "webpack": "^5.28.0",
     "webpack-cli": "^4.6.0"
   },
