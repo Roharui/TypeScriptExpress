@@ -1,4 +1,4 @@
-import * as express from "express";
+import express from "express";
 
 class App {
   public app: express.Application;
@@ -9,7 +9,7 @@ class App {
 
   constructor() {
     this.app = express();
-    this.app.get("/", (req: express.Request, res: express.Response) => {
+    this.app.get("/", (_: express.Request, res: express.Response) => {
       res.send("Hello World");
     });
   }
