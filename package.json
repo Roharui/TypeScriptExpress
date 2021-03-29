@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon --watch src --delay 1 src/index.ts",
     "build": "webpack --config webpack.config.js",
-    "eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx"
+    "eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "docker-build": "docker build -t roharui/webpack-node-app .",
+    "docker-run": "docker run -p 3001:3001 --name testserver -d roharui/webpack-node-app"
   },
   "keywords": [],
   "author": "",
